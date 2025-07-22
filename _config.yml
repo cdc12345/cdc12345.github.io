@@ -4,7 +4,7 @@
 
 # Site
 title: cdc的语言学博客
-subtitle: '保佑不挂科'
+subtitle: '语言学博客'
 description: 'helloworld'
 keywords:
 author: cdc
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://cdc12345.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,9 +96,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: last
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: "https://github.com/cdc12345/cdc12345.github.io"
+  branch: "origin"
+  message: "Site updated: { { now('YYYY-MM-DD HH:mm:ss') } }"
